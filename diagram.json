@@ -75,6 +75,13 @@
       "top": 6.2,
       "left": -153.6,
       "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -180,
+      "left": -84.6,
+      "attrs": { "volume": "0.1" }
     }
   ],
   "connections": [
@@ -99,7 +106,8 @@
     [ "btn1:1.r", "pico:GND.1", "black", [ "v0" ] ],
     [ "btn1:2.r", "pico:GP5", "#8f4814", [ "h29", "v19.4" ] ],
     [ "btn2:1.r", "pico:GP6", "limegreen", [ "v0" ] ],
-    [ "btn2:2.r", "pico:GND.3", "black", [ "h38.6", "v19.4" ] ]
+    [ "btn2:2.r", "pico:GND.3", "black", [ "h38.6", "v19.4" ] ],
+    [ "bz1:2", "pico:GP21", "green", [ "v0" ] ], [ "bz1:1", "pico:GND.3", "black", [ "v0" ] ]
   ],
   "dependencies": {}
 }
